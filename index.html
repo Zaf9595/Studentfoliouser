@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Studentfolio - Générateur de portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Générez votre portfolio étudiant</h1>
+  <form id="portfolioForm">
+    <input type="text" id="nom" placeholder="Nom complet" required>
+    <input type="text" id="programme" placeholder="Programme d'études" required>
+    <textarea id="bio" placeholder="Courte biographie" required></textarea>
+    <input type="url" id="github" placeholder="Lien GitHub">
+    <input type="url" id="linkedin" placeholder="Lien LinkedIn">
+    <button type="submit">Générer l’aperçu</button>
+  </form>
+
+  <div id="preview">
+    <h2>Aperçu de votre site</h2>
+    <iframe id="previewFrame"></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
